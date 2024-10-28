@@ -1,0 +1,50 @@
+version: 2
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - env:
+      - GO111MODULE=on
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w
+    mod_timestamp: '{{ .CommitTimestamp }}'
+    goos:
+      - linux
+      - windows
+      - darwin
+      - freebsd
+    goarch:
+      - '386'
+      - amd64
+      - arm
+      - arm64
+checksum:
+  name_template: checksums.txt
+archives:
+  - format: binary
+    name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}'
+changelog:
+  use: github
+  sort: asc
+  groups:
+    - title: New Features
+      regexp: "^.*feat[(\\w)]*:+.*$"
+      order: 0
+    - title: 'Bug fixes'
+      regexp: "^.*fix[(\\w)]*:+.*$"
+      order: 1
+    - title: 'Documentation updates'
+      regexp: "^.*docs[(\\w)]*:+.*$"
+      order: 2
+    - title: 'Refactoring'
+      regexp: "^.*refactor[(\\w)]*:+.*$"
+      order: 3
+    - title: Others
+      order: 4
+release:
+  draft: true
