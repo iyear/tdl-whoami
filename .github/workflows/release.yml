@@ -30,3 +30,5 @@ jobs:
           distribution: goreleaser
           version: v2.3.2
           args: release --clean --timeout 1h
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
