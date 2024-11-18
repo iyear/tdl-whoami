@@ -31,7 +31,7 @@ checksum:
   name_template: checksums.txt
 archives:
   - format: binary
-    name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}{{ with .Arm }}v{{ . }}'
+    name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}{{ with .Arm }}v{{ . }}{{ end }}'
 changelog:
   use: github
   sort: asc
