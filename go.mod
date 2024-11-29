@@ -7,7 +7,7 @@ require (
 	github.com/go-faster/errors v0.7.1
 	github.com/go-faster/jx v1.1.0
 	github.com/gotd/td v0.102.0
-	github.com/iyear/tdl/extension v0.18.1
+	github.com/iyear/tdl/extension v0.18.3
 	github.com/mattn/go-colorable v0.1.13
 	github.com/neilotoole/jsoncolor v0.7.1
 	github.com/spf13/pflag v1.0.5
@@ -21,7 +21,7 @@ require (
 	github.com/gotd/ige v0.2.2 // indirect
 	github.com/gotd/neo v0.1.5 // indirect
 	github.com/iyear/connectproxy v0.1.1 // indirect
-	github.com/iyear/tdl/core v0.18.1 // indirect
+	github.com/iyear/tdl/core v0.18.3 // indirect
 	github.com/klauspost/compress v1.17.8 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/segmentio/asm v1.2.0 // indirect
