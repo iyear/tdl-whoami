@@ -8,7 +8,7 @@ require (
 	github.com/go-faster/jx v1.1.0
 	github.com/gotd/td v0.102.0
 	github.com/iyear/tdl/extension v0.18.1
-	github.com/mattn/go-colorable v0.1.13
+	github.com/mattn/go-colorable v0.1.14
 	github.com/neilotoole/jsoncolor v0.7.1
 	github.com/spf13/pflag v1.0.5
 )
@@ -33,7 +33,7 @@ require (
 	golang.org/x/crypto v0.29.0 // indirect
 	golang.org/x/net v0.31.0 // indirect
 	golang.org/x/sync v0.9.0 // indirect
-	golang.org/x/sys v0.27.0 // indirect
+	golang.org/x/sys v0.29.0 // indirect
 	golang.org/x/term v0.26.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	nhooyr.io/websocket v1.8.11 // indirect
